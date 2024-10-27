@@ -1,0 +1,103 @@
+.task {
+    inline-size: 100%;
+    background: #262626;
+    border: 1px solid #333333;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    transition: background 0.3s ease;
+}
+
+.task:hover {
+    background: #333333;
+}
+
+.task p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #F2F2F2;
+    margin-inline-end: auto;
+    flex: 1;
+}
+
+p.textCompleted {
+    color: #808080;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.checkContainer {
+    inline-size: 24px;
+    block-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.checkContainer div {
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: 999px;
+    border: 2px solid #4EA8DE;
+}
+
+.checkContainer svg {
+    inline-size: 100%;
+    block-size: 100%;
+    color: #5E60CE;
+}
+
+.editForm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.editInput {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: #F2F2F2;
+    background: #333333;
+    flex: 1;
+}
+
+.saveButton {
+    padding: 8px 12px;
+    background: #4EA8DE;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.saveButton:hover {
+    background: #3BA8DE;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.editButton,
+.deleteButton {
+    background: none;
+    border: none;
+    color: #808080;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.editButton:hover {
+    color: #4EA8DE;
+}
+
+.deleteButton:hover {
+    color: #E63946;
+}
